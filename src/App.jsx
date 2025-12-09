@@ -228,14 +228,19 @@ const AfneyWebsite = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-8 text-sm font-medium text-slate-400">
-            {['Uzmanlıklar', 'Projeler', 'Teknoloji', 'Kurumsal'].map((item) => (
+            {[
+              { key: 'expertise', section: 'uzmanliklar' },
+              { key: 'projects', section: 'projeler' },
+              { key: 'technology', section: 'teknoloji' },
+              { key: 'corporate', section: 'kurumsal' }
+            ].map((item) => (
               <motion.button
-                key={item}
+                key={item.key}
                 whileHover={{ y: -2 }}
-                onClick={() => scrollToSection(item.toLowerCase().replace('ı', 'i').replace('ş', 's').replace('ç', 'c'))}
+                onClick={() => scrollToSection(item.section)}
                 className="hover:text-blue-400 transition-colors relative group"
               >
-                {item}
+                {t(`nav.${item.key}`)}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 transition-all group-hover:w-full"></span>
               </motion.button>
             ))}
@@ -268,13 +273,18 @@ const AfneyWebsite = () => {
             exit={{ opacity: 0, y: -20 }}
             className="md:hidden absolute top-full left-0 w-full bg-slate-900 border-b border-slate-800 p-6 flex flex-col gap-4 shadow-2xl"
           >
-            {['Uzmanlıklar', 'Projeler', 'Teknoloji', 'Kurumsal'].map((item) => (
+            {[
+              { key: 'expertise', section: 'uzmanliklar' },
+              { key: 'projects', section: 'projeler' },
+              { key: 'technology', section: 'teknoloji' },
+              { key: 'corporate', section: 'kurumsal' }
+            ].map((item) => (
               <button
-                key={item}
-                onClick={() => scrollToSection(item.toLowerCase().replace('ı', 'i').replace('ş', 's'))}
+                key={item.key}
+                onClick={() => scrollToSection(item.section)}
                 className="text-left text-slate-300 hover:text-blue-400 py-3 border-b border-slate-800/50 font-medium"
               >
-                {item}
+                {t(`nav.${item.key}`)}
               </button>
             ))}
           </motion.div>
@@ -314,7 +324,7 @@ const AfneyWebsite = () => {
                 className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-950/30 border border-blue-900/50 text-blue-400 text-xs font-mono mb-8 backdrop-blur-sm"
               >
                 <ShieldCheck size={14} />
-                <span>Enterprise Grade Software Engineering</span>
+                <span>{t('hero.badge')}</span>
               </motion.div>
 
               <motion.h1
@@ -323,9 +333,9 @@ const AfneyWebsite = () => {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="text-5xl lg:text-7xl font-bold leading-[1.1] mb-8 tracking-tight"
               >
-                Karmaşık Sistemleri <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-400 to-white">Mükemmelliğe</span> <br />
-                Dönüştürüyoruz.
+                {t('hero.title')} <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-400 to-white">{t('hero.titleHighlight')}</span> <br />
+                {t('hero.titleEnd')}
               </motion.h1>
 
               <motion.p
@@ -334,7 +344,7 @@ const AfneyWebsite = () => {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="text-lg text-slate-400 mb-10 max-w-xl leading-relaxed border-l-2 border-slate-800 pl-6"
               >
-                20 yıllık kıdemli mühendislik deneyimiyle; miras sistemleri modernize ediyor, yüksek performanslı mimariler kuruyor ve işletmenizi geleceğe taşıyoruz.
+                {t('hero.subtitle')}
               </motion.p>
 
               <motion.div
@@ -349,7 +359,7 @@ const AfneyWebsite = () => {
                   onClick={() => scrollToSection('projeler')}
                   className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold transition-all shadow-lg shadow-blue-900/20 flex items-center justify-center gap-2 group"
                 >
-                  Başarı Hikayeleri <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                  {t('hero.caseStudies')} <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                 </motion.button>
                 <motion.button
                   whileHover={{ scale: 1.05 }}
@@ -357,7 +367,7 @@ const AfneyWebsite = () => {
                   onClick={() => scrollToSection('uzmanliklar')}
                   className="bg-slate-900/50 border border-slate-700 hover:bg-slate-800 text-white px-8 py-4 rounded-xl font-bold transition-colors backdrop-blur-sm"
                 >
-                  Teknik Yetkinlikler
+                  {t('hero.expertise')}
                 </motion.button>
               </motion.div>
             </div>
@@ -438,7 +448,7 @@ const AfneyWebsite = () => {
               <div className="text-5xl font-bold text-white mb-2">
                 <Counter target={20} suffix="+" />
               </div>
-              <div className="text-slate-400">Yıllık Deneyim</div>
+              <div className="text-slate-400">{t('stats.experience')}</div>
             </motion.div>
 
             <motion.div variants={scaleIn} className="text-center p-8 rounded-2xl bg-slate-950/50 border border-slate-800 backdrop-blur-sm">
@@ -448,7 +458,7 @@ const AfneyWebsite = () => {
               <div className="text-5xl font-bold text-white mb-2">
                 <Counter target={100} suffix="+" />
               </div>
-              <div className="text-slate-400">Başarılı Proje</div>
+              <div className="text-slate-400">{t('stats.projects')}</div>
             </motion.div>
 
             <motion.div variants={scaleIn} className="text-center p-8 rounded-2xl bg-slate-950/50 border border-slate-800 backdrop-blur-sm">
@@ -458,7 +468,7 @@ const AfneyWebsite = () => {
               <div className="text-5xl font-bold text-white mb-2">
                 <Counter target={99} suffix=".9%" />
               </div>
-              <div className="text-slate-400">Uptime Garantisi</div>
+              <div className="text-slate-400">{t('stats.uptime')}</div>
             </motion.div>
           </div>
         </div>
