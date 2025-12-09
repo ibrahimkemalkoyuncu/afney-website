@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
 import { Toaster, toast } from 'react-hot-toast';
 import emailjs from '@emailjs/browser';
+import { ThemeToggle } from './components/ThemeToggle';
 import {
   Code,
   Cpu,
@@ -237,7 +238,8 @@ const AfneyWebsite = () => {
             ))}
           </div>
 
-          <div className="hidden md:block">
+          <div className="hidden md:flex items-center gap-3">
+            <ThemeToggle />
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
