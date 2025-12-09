@@ -2,7 +2,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
 import { Toaster, toast } from 'react-hot-toast';
 import emailjs from '@emailjs/browser';
+import { useTranslation } from 'react-i18next';
 import { ThemeToggle } from './components/ThemeToggle';
+import { LanguageSwitcher } from './components/LanguageSwitcher';
 import {
   Code,
   Cpu,
@@ -95,6 +97,7 @@ const useScrollAnimation = () => {
 };
 
 const AfneyWebsite = () => {
+  const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeCase, setActiveCase] = useState(0);
@@ -239,6 +242,7 @@ const AfneyWebsite = () => {
           </div>
 
           <div className="hidden md:flex items-center gap-3">
+            <LanguageSwitcher />
             <ThemeToggle />
             <motion.button
               whileHover={{ scale: 1.05 }}
@@ -246,7 +250,7 @@ const AfneyWebsite = () => {
               onClick={() => scrollToSection('iletisim')}
               className="bg-white text-slate-950 hover:bg-slate-200 px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-[0_0_25px_rgba(255,255,255,0.3)]"
             >
-              İletişime Geç
+              {t('nav.contact')}
             </motion.button>
           </div>
 

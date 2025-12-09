@@ -1,0 +1,121 @@
+{
+    "nav": {
+        "expertise": "Expertise",
+        "projects": "Projects",
+        "technology": "Technology",
+        "corporate": "Corporate",
+        "contact": "Get in Touch"
+    },
+    "hero": {
+        "badge": "Enterprise Grade Software Engineering",
+        "title": "Transforming Complex Systems",
+        "titleHighlight": "to Excellence",
+        "titleEnd": "",
+        "subtitle": "With 20 years of senior engineering experience; we modernize legacy systems, build high-performance architectures, and propel your business into the future.",
+        "caseStudies": "Success Stories",
+        "expertise": "Technical Expertise"
+    },
+    "stats": {
+        "experience": "Years of Experience",
+        "projects": "Successful Projects",
+        "uptime": "Uptime Guarantee"
+    },
+    "expertiseSection": {
+        "label": "WHAT WE DO",
+        "title": "Engineering-Driven Solutions",
+        "subtitle": "We don't offer ready-made packages—we design custom architectures tailored to your business DNA. Our experience guarantees even the most challenging integrations.",
+        "legacy": {
+            "title": "Legacy Modernization",
+            "desc": "We migrate your old Java, Oracle, or Monolithic systems to modern .NET Core and Microservices architecture without data loss.",
+            "feature1": "Data Migration",
+            "feature2": "Clean Architecture"
+        },
+        "healthtech": {
+            "title": "Health & FinTech",
+            "desc": "Deep expertise in sensitive integrations like e-Nabız, Medula and projects requiring high data security in healthcare/finance sectors.",
+            "feature1": "HBYS Integrations",
+            "feature2": "GDPR Compliance"
+        },
+        "iot": {
+            "title": "IoT & Embedded Systems",
+            "desc": "Software that communicates with hardware. Industrial solutions including DVR/NVR, people counting systems, and real-time data collection from the field.",
+            "feature1": "MQTT & TCP/IP",
+            "feature2": "Real-time Dashboard"
+        }
+    },
+    "projectsSection": {
+        "label": "EXPERIENCE",
+        "title": "Real Scenarios,",
+        "titleSecond": "Proven Success.",
+        "subtitle": "As the Afney team, we are the architects of systems that have worked in the field, been stress-tested, and managed millions of transactions—beyond theoretical coding.",
+        "caseLabel": "Case Study",
+        "problem": "Problem & Process",
+        "result": "Result",
+        "technologies": "Technologies Used"
+    },
+    "cases": {
+        "java": {
+            "title": "Major Migration from Java to .NET Core",
+            "sector": "Finance & Technology",
+            "desc": "Migration of an Oracle and Java-based legacy system to .NET Core and MS SQL Server architecture without data loss.",
+            "result": "Zero data loss, 40% performance improvement, and transition to modern architecture."
+        },
+        "hbys": {
+            "title": "Hospital Information Management System (HIMS)",
+            "sector": "Health Technologies",
+            "desc": "Management of high-volume patient data at Medicana Hospitals Group scale, with e-Nabız and Medula integrations.",
+            "result": "Secure processing of millions of rows of data and T-SQL performance optimization."
+        },
+        "iot": {
+            "title": "IoT and Hardware Integration",
+            "sector": "Embedded Systems",
+            "desc": "People counting systems, DVR/NVR camera integrations, and web services communicating with hardware.",
+            "result": "Real-time and uninterrupted communication between field devices and the cloud."
+        }
+    },
+    "techStack": {
+        "title": "Our Technical Arsenal",
+        "subtitle": "We don't just use what's popular—we use what works."
+    },
+    "corporate": {
+        "title": "Leadership & Vision",
+        "desc1": "Afney Software House is the product of 20 years of field experience under the leadership of İbrahim Kemal Koyuncu.",
+        "desc2": "It is managed with an engineering mindset that has held critical positions across dozens of different sectors, from municipalities to hospitals, e-commerce giants to industrial facilities.",
+        "github": "GitHub Profile",
+        "linkedin": "LinkedIn Profile"
+    },
+    "contact": {
+        "label": "CONTACT",
+        "title": "Let's Have a Technical Coffee.",
+        "subtitle": "Whether it's a new project idea or a stuck legacy system transformation. Fill out the form to discuss engineering solutions directly, not standard sales pitches.",
+        "email": "Email",
+        "office": "Office",
+        "location": "Istanbul (Asia), Maltepe",
+        "country": "Turkey",
+        "form": {
+            "name": "Full Name",
+            "namePlaceholder": "Your name",
+            "email": "Email",
+            "emailPlaceholder": "company@example.com",
+            "projectType": "Project Type",
+            "message": "Your Message",
+            "messagePlaceholder": "Details about your project...",
+            "send": "Send",
+            "sending": "Sending...",
+            "types": {
+                "legacy": "Legacy Modernization (System Renewal)",
+                "custom": "Custom Software Development (.NET Core)",
+                "hbys": "HIMS / Health Integration",
+                "iot": "IoT and Embedded Systems",
+                "consulting": "Consulting / Code Review",
+                "other": "Other"
+            },
+            "success": "Your message was sent successfully! 🎉",
+            "error": "An error occurred. Please try again.",
+            "fillAll": "Please fill in all fields!"
+        }
+    },
+    "footer": {
+        "copyright": "All rights reserved."
+    }
+}

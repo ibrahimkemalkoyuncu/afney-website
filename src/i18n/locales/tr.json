@@ -1,0 +1,121 @@
+{
+    "nav": {
+        "expertise": "Uzmanlıklar",
+        "projects": "Projeler",
+        "technology": "Teknoloji",
+        "corporate": "Kurumsal",
+        "contact": "İletişime Geç"
+    },
+    "hero": {
+        "badge": "Enterprise Grade Software Engineering",
+        "title": "Karmaşık Sistemleri",
+        "titleHighlight": "Mükemmelliğe",
+        "titleEnd": "Dönüştürüyoruz.",
+        "subtitle": "20 yıllık kıdemli mühendislik deneyimiyle; miras sistemleri modernize ediyor, yüksek performanslı mimariler kuruyor ve işletmenizi geleceğe taşıyoruz.",
+        "caseStudies": "Başarı Hikayeleri",
+        "expertise": "Teknik Yetkinlikler"
+    },
+    "stats": {
+        "experience": "Yıllık Deneyim",
+        "projects": "Başarılı Proje",
+        "uptime": "Uptime Garantisi"
+    },
+    "expertiseSection": {
+        "label": "NE YAPIYORUZ?",
+        "title": "Mühendislik Odaklı Çözümler",
+        "subtitle": "Hazır paketler değil, işinizin DNA'sına uygun özel mimariler tasarlıyoruz. Tecrübemiz, en zorlu entegrasyonların garantisidir.",
+        "legacy": {
+            "title": "Legacy Modernizasyon",
+            "desc": "Eski Java, Oracle veya Monolith yapıdaki sistemlerinizi, veri kaybı yaşamadan modern .NET Core ve Microservices mimarisine taşıyoruz.",
+            "feature1": "Veri Migrasyonu",
+            "feature2": "Clean Architecture"
+        },
+        "healthtech": {
+            "title": "Sağlık & FinTech",
+            "desc": "e-Nabız, Medula gibi hassas entegrasyonlar ve yüksek veri güvenliği gerektiren sağlık/finans projelerinde derin uzmanlık.",
+            "feature1": "HBYS Entegrasyonları",
+            "feature2": "KVKK Uyumluluğu"
+        },
+        "iot": {
+            "title": "IoT & Gömülü Sistemler",
+            "desc": "Donanım ile konuşan yazılımlar. DVR/NVR, Kişi Sayma ve sahadan anlık veri toplayan endüstriyel çözümler.",
+            "feature1": "MQTT & TCP/IP",
+            "feature2": "Real-time Dashboard"
+        }
+    },
+    "projectsSection": {
+        "label": "DENEYİM",
+        "title": "Gerçek Senaryolar,",
+        "titleSecond": "Kanıtlanmış Başarılar.",
+        "subtitle": "Afney ekibi olarak, teorik kodlamadan öte, sahada çalışmış, stresi test edilmiş ve milyonlarca işlemi yönetmiş sistemlerin mimarıyız.",
+        "caseLabel": "Vaka Analizi",
+        "problem": "Problem & Süreç",
+        "result": "Sonuç",
+        "technologies": "Kullanılan Teknolojiler"
+    },
+    "cases": {
+        "java": {
+            "title": "Java'dan .NET Core'a Büyük Göç",
+            "sector": "Finans & Teknoloji",
+            "desc": "Oracle ve Java tabanlı miras (legacy) bir sistemin, veri kaybı yaşanmadan .NET Core ve MS SQL Server mimarisine taşınması.",
+            "result": "Sıfır veri kaybı, %40 performans artışı ve modern mimariye geçiş."
+        },
+        "hbys": {
+            "title": "Hastane Bilgi Yönetim Sistemi (HBYS)",
+            "sector": "Sağlık Teknolojileri",
+            "desc": "Medicana Hastaneler Grubu ölçeğinde yüksek hacimli hasta verilerinin yönetimi, e-Nabız ve Medula entegrasyonları.",
+            "result": "Milyonlarca satırlık verinin güvenli işlenmesi ve T-SQL performans optimizasyonu."
+        },
+        "iot": {
+            "title": "IoT ve Donanım Entegrasyonu",
+            "sector": "Gömülü Sistemler",
+            "desc": "Kişi sayma sistemleri, DVR/NVR kamera entegrasyonları ve donanım ile konuşan web servisleri.",
+            "result": "Sahadaki donanımların bulut ile anlık ve kesintisiz haberleşmesi."
+        }
+    },
+    "techStack": {
+        "title": "Teknik Cephanemiz",
+        "subtitle": "Sadece popüler olanı değil, işe yarayanı kullanıyoruz."
+    },
+    "corporate": {
+        "title": "Liderlik & Vizyon",
+        "desc1": "Afney Software House, İbrahim Kemal Koyuncu liderliğinde, 20 yıllık saha tecrübesinin ürünüdür.",
+        "desc2": "Belediyelerden hastanelere, e-ticaret devlerinden endüstriyel tesislere kadar onlarca farklı sektörde, kritik görevlerde bulunmuş bir mühendislik aklıyla yönetilmektedir.",
+        "github": "GitHub Profili",
+        "linkedin": "LinkedIn Profili"
+    },
+    "contact": {
+        "label": "İLETİŞİM",
+        "title": "Teknik Bir Kahve İçelim.",
+        "subtitle": "İster yeni bir proje fikri, ister tıkanmış bir miras (legacy) sistem dönüşümü. Standart satış konuşmaları değil, doğrudan mühendislik çözümleri üzerine konuşmak için formu doldurun.",
+        "email": "E-Posta",
+        "office": "Ofis",
+        "location": "İstanbul (Asya), Maltepe",
+        "country": "Türkiye",
+        "form": {
+            "name": "Ad Soyad",
+            "namePlaceholder": "Adınız",
+            "email": "E-Posta",
+            "emailPlaceholder": "sirket@ornek.com",
+            "projectType": "Proje Türü",
+            "message": "Mesajınız",
+            "messagePlaceholder": "Projeniz hakkında detaylar...",
+            "send": "Gönder",
+            "sending": "Gönderiliyor...",
+            "types": {
+                "legacy": "Legacy Modernizasyon (Eski Sistemi Yenileme)",
+                "custom": "Özel Yazılım Geliştirme (.NET Core)",
+                "hbys": "HBYS / Sağlık Entegrasyonu",
+                "iot": "IoT ve Gömülü Sistemler",
+                "consulting": "Danışmanlık / Code Review",
+                "other": "Diğer"
+            },
+            "success": "Mesajınız başarıyla gönderildi! 🎉",
+            "error": "Bir hata oluştu. Lütfen tekrar deneyin.",
+            "fillAll": "Lütfen tüm alanları doldurun!"
+        }
+    },
+    "footer": {
+        "copyright": "Tüm hakları saklıdır."
+    }
+}
